@@ -12,10 +12,10 @@ export default function Header() {
   }
 
   return (
-    <div className="flex flex-col">
-      <div className="flex flex-row justify-between items-center mx-12 h-[110px]">
+    <div className="flex flex-col mx-auto">
+      <div className="flex flex-row justify-between items-center px-12 h-[110px]">
         <Image src={"/srlogo.png"} alt="" width={70} height={70}></Image>
-        <div className="hidden md:flex flex-row gap-5 font-semibold text-[12px]">
+        <div className="hidden md:flex flex-row gap-5 font-[700] text-[12px] text-[#070707] tracking-[3.4px]">
           <p>HOME</p>
           <p>ABOUT US</p>
           <p>MENU</p>
