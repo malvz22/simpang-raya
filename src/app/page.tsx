@@ -209,6 +209,31 @@ export default function Home() {
             </div>
           </Slider>
         </div>
+        <div className="grid grid-cols-2 gap-5 justify-items-center items-center mx-5">
+          <Image
+            className="object-cover p-2 col-span-2 md:col-span-1 rounded-[25px]"
+            src={"/logo-reklame.jpg"}
+            alt="reklame"
+            width={600}
+            height={600}
+            layout="intrinsic"
+          ></Image>
+          <div className="text-center md:text-start col-span-2 flex flex-col md:col-span-1 gap-6 max-w-[550px]">
+            <h1 className="text-[#A22020] text-[60px] ">SIMPANG RAYA</h1>
+            <p className="text-[14px] font-normal">
+              <span className="font-semibold">Restoran Simpang Raya</span>{" "}
+              adalah usaha pribumi yang bergerak dibidang masakan Minang
+              (Padang), dan pada awalnya Restoran Simpang Raya berdiri di Bukit
+              Tinggi daerah Sumatra Barat oleh Alm.Muhammad Noor Datuk Maharajo
+              bersama rekan-rekannya. Setelah itu adik dari Alm. Muhammad Noor
+              yakni H.Noersal Zainuddin mengembangkan usaha ini di Pulau Jawa
+              dan sekitarnya dengan niat untuk melakukan suatu hijrah
+            </p>
+            <p className="bg-[#A22020] px-10 py-5 text-[12px] text-[#f9f9f9] mx-auto md:me-auto justify-start">
+              BACA TENTANG KAMI
+            </p>
+          </div>
+        </div>
       </div>
     </>
   );
