@@ -3,6 +3,7 @@ import Image from "next/image";
 import Hero from "./Components/Hero";
 
 import Slider from "react-slick";
+import SliderMakanan from "./Components/SliderMakanan";
 
 export default function Home() {
   const settings = {
@@ -25,7 +26,7 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <div className="flex flex-col mt-7 max-w-[1170px] mx-auto">
+      <div className="flex flex-col mt-7 max-w-[1170px] mx-auto px-5 gap-6 py-10">
         <h1 className="text-center text-[60px] text-[#A22020]">Menu Favorit</h1>
         <div className="hidden lg:flex flex-row justify-center">
           <div className="px-3 py-4">
@@ -229,10 +230,22 @@ export default function Home() {
               yakni H.Noersal Zainuddin mengembangkan usaha ini di Pulau Jawa
               dan sekitarnya dengan niat untuk melakukan suatu hijrah
             </p>
-            <p className="bg-[#A22020] px-10 py-5 text-[12px] text-[#f9f9f9] mx-auto md:me-auto justify-start">
+            <p className="bg-[#A22020] px-10 py-5 text-[12px] text-[#f9f9f9] md:me-auto justify-start">
               BACA TENTANG KAMI
             </p>
           </div>
+        </div>
+      </div>
+      <div className="max-w-full bg-[#A22020]">
+        <div className="max-w-[1170px] mx-auto flex flex-col py-20">
+          <p className="text-white text-center text-[16px]">
+            Menu - Simpang Raya
+          </p>
+          <h1 className="text-[#FFEB9A] text-center text-[60px]">MAKANAN</h1>
+          <SliderMakanan />
+          {/* <div className="h-[600px] w-[600px] bg-white relative">
+            <div className="h-[150px] w-[150px] bg-blue-300 absolute top-[-150px]"></div>
+          </div> */}
         </div>
       </div>
     </>
