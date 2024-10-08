@@ -4,6 +4,7 @@ import Hero from "./Components/Hero";
 
 import Slider from "react-slick";
 import SliderMakanan from "./Components/SliderMakanan";
+import SliderMinuman from "./Components/SliderMinuman";
 
 export default function Home() {
   const settings = {
@@ -243,9 +244,8 @@ export default function Home() {
           </p>
           <h1 className="text-[#FFEB9A] text-center text-[60px]">MAKANAN</h1>
           <SliderMakanan />
-          {/* <div className="h-[600px] w-[600px] bg-white relative">
-            <div className="h-[150px] w-[150px] bg-blue-300 absolute top-[-150px]"></div>
-          </div> */}
+          <h1 className="text-[#FFEB9A] text-center text-[60px]">MINUMAN</h1>
+          <SliderMinuman />
         </div>
       </div>
     </>
