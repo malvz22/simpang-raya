@@ -239,7 +239,7 @@ export default function Home() {
         </div>
       </div>
       <div className="max-w-full bg-[#A22020]">
-        <div className="max-w-[1170px] mx-auto flex flex-col py-20">
+        <div className="max-w-[1170px] mx-auto flex flex-col py-20 px-7">
           <p className="text-white text-center text-[16px]">
             Menu - Simpang Raya
           </p>
@@ -250,6 +250,11 @@ export default function Home() {
           <h1 className="text-[#FFEB9A] text-center text-[60px]">DESSERT</h1>
           <SliderDessert />
         </div>
+      </div>
+      <div className="max-w-[1170px] mx-auto flex flex-col py-20">
+        <h1 className="text-center text-[60px] text-[#A22020]">
+          CABANG SIMPANG RAYA
+        </h1>
       </div>
     </>
   );

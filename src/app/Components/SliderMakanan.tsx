@@ -9,10 +9,26 @@ export default function SliderMakanan() {
   const settings = {
     dots: false,
     arrows: true,
-    slidesToShow: 3,
     slidesToScroll: 1,
+    slidesToShow: 3,
     infinite: true,
     adaptiveHeight: true,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
   return (
     <>
