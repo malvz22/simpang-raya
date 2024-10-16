@@ -2,10 +2,11 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Header from "./Components/Header";
 import { DM_Sans, Old_Standard_TT } from "next/font/google";
+import Footer from "./Components/Footer";
 
 const dmsans = DM_Sans({ weight: "variable", subsets: ["latin"] });
 const oldstandard = Old_Standard_TT({
-  weight: "400",
+  weight: ["400", "700"],
   style: "normal",
   subsets: ["latin"],
 });
@@ -27,6 +28,7 @@ export default function RootLayout({
       >
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );

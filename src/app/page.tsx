@@ -264,7 +264,7 @@ export default function Home() {
         <div className="flex flex-col max-w-full md:max-w-[512px] p-3 gap-6">
           <h1 className="text-[60px] text-black">Kirim Kami Pesan!</h1>
           <div>
-            <p className="mb-3 text-[16px]">
+            <p className="mb-3 text-[16px] font-normal">
               Anda dapat menguhubungi kami melalui kontak atau sosial media
               kami. Kami dengan senang hati terhubung bersama Anda.
             </p>
@@ -315,7 +315,7 @@ export default function Home() {
                 type="email"
                 id="email"
                 name="email"
-                placeholder="Your Email (example@rmail.com)"
+                placeholder="Your Email (example@email.com)"
                 className="border-[#A22020] border-solid border-[1px] rounded-sm px-2 h-[42px] w-full max-w-[90%]"
               ></input>
               <input
