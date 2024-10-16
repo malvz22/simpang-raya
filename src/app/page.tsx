@@ -6,6 +6,9 @@ import Slider from "react-slick";
 import SliderMakanan from "./Components/SliderMakanan";
 import SliderMinuman from "./Components/SliderMinuman";
 import SliderDessert from "./Components/SliderDessert";
+import { BsFillTelephoneFill } from "react-icons/bs";
+import { MdOutlineEmail } from "react-icons/md";
+import { FaInstagram } from "react-icons/fa";
 
 export default function Home() {
   const settings = {
@@ -255,6 +258,90 @@ export default function Home() {
         <h1 className="text-center text-[60px] text-[#A22020]">
           CABANG SIMPANG RAYA
         </h1>
+        <p className="text-center">(Work in Progress :))</p>
+      </div>
+      <div className="max-w-[1170px] mx-auto flex sm:flex-col md:flex-row py-20 justify-between">
+        <div className="flex flex-col max-w-[512px] p-2 gap-6">
+          <h1 className="text-[60px] text-black">Kirim Kami Pesan!</h1>
+          <div>
+            <p className="mb-3 text-[16px]">
+              Anda dapat menguhubungi kami melalui kontak atau sosial media
+              kami. Kami dengan senang hati terhubung bersama Anda.
+            </p>
+            <p className="text-[16px]">
+              Kunjungi Kami di resto cabang Kami yang tersebar di berbagai
+              provinsi dan kota-kota besar di Indonesia.
+            </p>
+          </div>
+          <div className="flex flex-row gap-6">
+            <div className="rounded-full w-[70px] h-[70px] flex justify-center items-center bg-[#A22020]">
+              <BsFillTelephoneFill size={35} className="text-white" />
+            </div>
+            <div className="flex flex-col justify-center">
+              <h1 className="text-[25px]">Telepon</h1>
+              <p>0852 8241 9922</p>
+            </div>
+          </div>
+          <div className="flex flex-row gap-6">
+            <div className="rounded-full w-[70px] h-[70px] flex justify-center items-center bg-[#A22020]">
+              <MdOutlineEmail size={35} className="text-white" />
+            </div>
+            <div className="flex flex-col justify-center">
+              <h1 className="text-[25px]">Email</h1>
+              <p>official@simpangraya.com</p>
+            </div>
+          </div>
+          <div className="flex flex-row gap-6">
+            <div className="rounded-full w-[70px] h-[70px] flex justify-center items-center bg-[#A22020]">
+              <FaInstagram size={35} className="text-white" />
+            </div>
+            <div className="flex flex-col justify-center">
+              <h1 className="text-[25px]">Instagram</h1>
+              <p>@simpang_raya</p>
+            </div>
+          </div>
+        </div>
+        <div className="w-full max-w-[600px]">
+          <div className="bg-[#747474] flex justify-center items-center h-[570px] shadow-md">
+            <form className="flex flex-col justify-center items-center gap-3 w-full max-w-[100%]">
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Your Name"
+                className="border-[#A22020] border-solid border-[1px] rounded-lg px-2 h-[42px] w-full max-w-[90%]"
+              ></input>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Your Email (example@rmail.com)"
+                className="border-[#A22020] border-solid border-[1px] rounded-lg px-2 h-[42px] w-full max-w-[90%]"
+              ></input>
+              <input
+                type="number"
+                id="contactNumber"
+                name="contactNumber"
+                placeholder="Your Contact Number"
+                className="border-[#A22020] border-solid border-[1px] rounded-lg px-2 h-[42px] w-full max-w-[90%]"
+              ></input>
+              <input
+                type="text"
+                id="messageSubject"
+                name="messageSubject"
+                placeholder="Your Message Subject"
+                className="border-[#A22020] border-solid border-[1px] rounded-lg px-2 h-[42px] w-full max-w-[90%]"
+              ></input>
+              <input
+                type="textarea"
+                id="message"
+                name="message"
+                placeholder="Your Message Here"
+                className="border-[#A22020] border-solid border-[1px] rounded-lg px-2 h-[160px] w-full max-w-[90%]"
+              ></input>
+            </form>
+          </div>
+        </div>
       </div>
     </>
   );
