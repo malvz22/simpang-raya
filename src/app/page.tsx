@@ -260,8 +260,8 @@ export default function Home() {
         </h1>
         <p className="text-center">(Work in Progress :))</p>
       </div>
-      <div className="max-w-[1170px] mx-auto flex sm:flex-col md:flex-row py-20 justify-between">
-        <div className="flex flex-col max-w-[512px] p-2 gap-6">
+      <div className="max-w-[1170px] mx-auto flex flex-col md:flex-row py-20 px-5 justify-between gap-4">
+        <div className="flex flex-col max-w-full md:max-w-[512px] p-3 gap-6">
           <h1 className="text-[60px] text-black">Kirim Kami Pesan!</h1>
           <div>
             <p className="mb-3 text-[16px]">
@@ -301,44 +301,50 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="w-full max-w-[600px]">
-          <div className="bg-[#747474] flex justify-center items-center h-[570px] shadow-md">
+        <div className="w-full max-w-full">
+          <div className="bg-[#747474] flex justify-center items-center h-[700px]">
             <form className="flex flex-col justify-center items-center gap-3 w-full max-w-[100%]">
               <input
                 type="text"
                 id="name"
                 name="name"
                 placeholder="Your Name"
-                className="border-[#A22020] border-solid border-[1px] rounded-lg px-2 h-[42px] w-full max-w-[90%]"
+                className="border-[#A22020] border-solid border-[1px] rounded-sm px-2 h-[42px] w-full max-w-[90%]"
               ></input>
               <input
                 type="email"
                 id="email"
                 name="email"
                 placeholder="Your Email (example@rmail.com)"
-                className="border-[#A22020] border-solid border-[1px] rounded-lg px-2 h-[42px] w-full max-w-[90%]"
+                className="border-[#A22020] border-solid border-[1px] rounded-sm px-2 h-[42px] w-full max-w-[90%]"
               ></input>
               <input
                 type="number"
                 id="contactNumber"
                 name="contactNumber"
                 placeholder="Your Contact Number"
-                className="border-[#A22020] border-solid border-[1px] rounded-lg px-2 h-[42px] w-full max-w-[90%]"
+                className="border-[#A22020] border-solid border-[1px] rounded-sm px-2 h-[42px] w-full max-w-[90%]"
               ></input>
               <input
                 type="text"
                 id="messageSubject"
                 name="messageSubject"
                 placeholder="Your Message Subject"
-                className="border-[#A22020] border-solid border-[1px] rounded-lg px-2 h-[42px] w-full max-w-[90%]"
+                className="border-[#A22020] border-solid border-[1px] rounded-sm px-2 h-[42px] w-full max-w-[90%]"
               ></input>
               <input
                 type="textarea"
                 id="message"
                 name="message"
                 placeholder="Your Message Here"
-                className="border-[#A22020] border-solid border-[1px] rounded-lg px-2 h-[160px] w-full max-w-[90%]"
+                className="border-[#A22020] border-solid border-[1px] rounded-sm px-2 h-[160px] w-full max-w-[90%]"
               ></input>
+              <button
+                type="submit"
+                className="bg-[#A22020] text-white px-10 py-5 font-bold "
+              >
+                KIRIM PESAN
+              </button>
             </form>
           </div>
         </div>

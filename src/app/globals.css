@@ -29,8 +29,12 @@ body {
 } */
 
 
-p, input{
+p, input, button{
   font-family: 'DM Sans', sans-serif;
+}
+
+.formBg{
+  background-color: rgba(23, 23, 23, 0.6);
 }
 
 
