@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Forum&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -37,6 +39,11 @@ p, input, button{
   background-color: rgba(23, 23, 23, 0.6);
 }
 
+.forum-regular {
+  font-family: "Forum", serif;
+  font-weight: 400;
+  font-style: normal;
+}
 
 
 

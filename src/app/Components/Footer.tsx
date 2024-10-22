@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { BsFillTelephoneFill } from "react-icons/bs";
 import { FaInstagram, FaGlobe } from "react-icons/fa";
 import { MdOutlineEmail } from "react-icons/md";
@@ -34,13 +35,22 @@ export default function Footer() {
           <div className="flex flex-col md:flex-row justify-between gap-10 mb-10">
             <div className="flex flex-col">
               <h1 className="mb-6 text-[24px]">NAVIGASI</h1>
-              <div className="flex flex-col gap-4">
-                <p className="text-[14px]">HOME</p>
-                <p className="text-[14px]">ABOUT US</p>
-                <p className="text-[14px]">MENUS</p>
-                <p className="text-[14px]">LOCATION</p>
-                <p className="text-[14px]">CONTACT</p>
-                <p className="text-[14px]">BLOG</p>
+              <div className="flex flex-col gap-4 text-[14px]">
+                <Link href={"/"}>
+                  <p>HOME</p>
+                </Link>
+                <Link href={"/about"}>
+                  <p>ABOUT US</p>
+                </Link>
+                <Link href={"/menu"}>
+                  <p>MENU</p>
+                </Link>
+                <Link href={"/location"}>
+                  <p>LOCATION</p>
+                </Link>
+                <Link href={"/contact"}>
+                  <p>CONTACT</p>
+                </Link>
               </div>
             </div>
             <div className="flex flex-col">
