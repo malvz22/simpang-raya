@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { FaEye, FaRegFlag } from "react-icons/fa";
 
 export default function About() {
   return (
@@ -10,7 +11,7 @@ export default function About() {
           <h1 className="text-[70px]">About Us</h1>
         </div>
       </div>
-      <div className="max-w-[1170px] mx-auto text-center flex flex-col py-[100px]">
+      <div className="max-w-[1170px] px-12 mx-auto text-center flex flex-col py-[100px]">
         <h1 className="text-[60px] text-[#A22020]">Perjalanan Kami</h1>
         <p className="text-[25px] mb-6">
           <b>Restoran Simpang Raya</b> adalah usaha pribumi yang bergerak
@@ -74,24 +75,30 @@ export default function About() {
           </p>
         </div>
       </div>
-      <div className="mx-auto max-w-[1170px] flex flex-col text-center py-[100px]">
+      <div className="mx-auto max-w-[1170px] flex flex-col text-center py-[100px] px-12">
         <h1 className="text-[#A22020] text-[12px]">VISI & MISI</h1>
         <h1 className="text-black text-[60px] pb-[30px]">
           Arah Menuju Kesuksesan di Masa Depan
         </h1>
-        <div className="flex flex-col md:flex-row justify-between gap-5">
-          <div className="flex flex-col gap-3 w-full max-w-[560px]">
-            <div className="w-full max-w-full h-[560px] relative">
+        <div className="flex flex-col md:flex-row justify-between gap-8 md:gap-5">
+          <div className="flex flex-col gap-3 w-full max-w-full md:max-w-[560px]">
+            <div className="w-full max-w-full h-auto relative bg-gradient-to-b from-transparent to-black/80 hover:bg-black/40 transition duration-950 ease-in-out">
               <Image
                 src={"/visi.jpg"}
                 alt="hidangan"
-                fill
+                width={800}
+                height={0}
                 objectFit="contain"
+                className="mix-blend-overlay"
               />
+              <div className="absolute translate-x-[-50%] translate-y-[-50%] left-[50%] top-[50%]  flex flex-col z-10">
+                <FaEye size={120} color="white" />
+                <h1 className="text-[25px] text-white">Visi Kami</h1>
+              </div>
             </div>
             <div className="flex flex-col text-start">
               <h1 className="text-[40px]">Visi</h1>
-              <p className="text-[16px]">
+              <p className="text-[16px] text-[#171717]">
                 Menjadi restoran Padang terbaik di Indonesia dengan jaringan
                 restoran yang tersebar di seluruh pelosok negeri. Untuk mencapai
                 visi ini, Restoran Simpang Raya selalu menjamin mutu
@@ -102,14 +109,20 @@ export default function About() {
               </p>
             </div>
           </div>
-          <div className="flex flex-col gap-3 w-full max-w-[560px]">
-            <div className="w-full max-w-full h-[560px] relative">
+          <div className="flex flex-col gap-3 w-full max-w-full md:max-w-[560px]">
+            <div className="w-full max-w-full h-auto relative bg-gradient-to-b from-transparent to-black/80 hover:bg-black/40 transition duration-950 ease-in-out">
               <Image
                 src={"/misi.jpg"}
                 alt="hidangan"
-                fill
+                width={800}
+                height={0}
                 objectFit="contain"
+                className="mix-blend-overlay"
               />
+              <div className="absolute translate-x-[-50%] translate-y-[-50%] left-[50%] top-[50%] flex flex-col z-10">
+                <FaRegFlag size={100} color="white" />
+                <h1 className="text-[25px] text-white">Misi Kami</h1>
+              </div>
             </div>
             <div className="flex flex-col text-start">
               <h1 className="text-[40px]">Misi</h1>
