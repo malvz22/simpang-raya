@@ -74,6 +74,76 @@ export default function About() {
           </p>
         </div>
       </div>
+      <div className="mx-auto max-w-[1170px] flex flex-col text-center py-[100px]">
+        <h1 className="text-[#A22020] text-[12px]">VISI & MISI</h1>
+        <h1 className="text-black text-[60px] pb-[30px]">
+          Arah Menuju Kesuksesan di Masa Depan
+        </h1>
+        <div className="flex flex-col md:flex-row justify-between gap-5">
+          <div className="flex flex-col gap-3 w-full max-w-[560px]">
+            <div className="w-full max-w-full h-[560px] relative">
+              <Image
+                src={"/visi.jpg"}
+                alt="hidangan"
+                fill
+                objectFit="contain"
+              />
+            </div>
+            <div className="flex flex-col text-start">
+              <h1 className="text-[40px]">Visi</h1>
+              <p className="text-[16px]">
+                Menjadi restoran Padang terbaik di Indonesia dengan jaringan
+                restoran yang tersebar di seluruh pelosok negeri. Untuk mencapai
+                visi ini, Restoran Simpang Raya selalu menjamin mutu
+                produk-produknya dengan cita rasa makanan khas Minang,
+                memberikan pelayanan yang memuaskan, menawarkan kebersihan dan
+                keamanan produk pangan yang halal serta nilai-nilai tambah
+                lainnya.
+              </p>
+            </div>
+          </div>
+          <div className="flex flex-col gap-3 w-full max-w-[560px]">
+            <div className="w-full max-w-full h-[560px] relative">
+              <Image
+                src={"/misi.jpg"}
+                alt="hidangan"
+                fill
+                objectFit="contain"
+              />
+            </div>
+            <div className="flex flex-col text-start">
+              <h1 className="text-[40px]">Misi</h1>
+              <ul className="list-disc ps-5">
+                <li className="text-[16px]">
+                  Membangun organisasi perusahaan dengan mengembangkan sistem
+                  manajemen yang baik dan sumber daya manusia yang berdedikasi
+                  dan Profesional.
+                </li>
+                <li className="text-[16px]">
+                  Melestarikan dan mengembangkan makanan khas minang ke seluruh
+                  pelosok Indonesia termasuk ke pasar Internasional.
+                </li>
+                <li className="text-[16px]">
+                  Membangun hubungan yang baik dan memberikan kepuasan kepada
+                  semua pihak diantaranya pelanggan, karyawan, pemegang
+                  saham/investor, pemasok maupun pemilik.
+                </li>
+                <li className="text-[16px]">
+                  Menjadi Perusahaan dengan sistem berbasis syariah/sesuai
+                  dengan ajaran Islam.
+                </li>
+                <li className="text-[16px]">
+                  Mengembangkan inovasi demi kelangsungan dan ketahanan
+                  perusahaan.
+                </li>
+                <li className="text-[16px]">
+                  Menyelenggarakan program-program kemanusiaan dan sosial.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
     </>
   );
 }

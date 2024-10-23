@@ -31,7 +31,7 @@ body {
 } */
 
 
-p, input, button{
+p, input, button, ul{
   font-family: 'DM Sans', sans-serif;
 }
 
