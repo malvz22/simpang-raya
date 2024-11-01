@@ -127,7 +127,7 @@ const menus: Menu[] = [
     imageSrc: "/dendeng-lambok.jpg",
     imageAlt: "dendeng lambok",
     menuDesc:
-      "Hidangan khas Padang yang menggugah selera dengan potongan daging sapi tipis yang dimasak hingga empuk. Daging sapi ini dibalut bumbu rempah pilihan seperti cabai merah, bawang putih, dan serai, menghasilkan rasa pedas dan gurih yang khas. Setiap potongan dendeng lambok memiliki tekstur yang lembut namun kaya akan cita rasa.",
+      "Hidangan khas Padang yang menggugah selera dengan potongan daging sapi tipis yang dimasak hingga empuk. Daging sapi ini dibalut bumbu rempah pilihan seperti cabai merah, bawang putih, dan serai, menghasilkan rasa pedas dan gurih yang khas.",
     harga: "Rp27.000",
   },
   {
@@ -136,7 +136,7 @@ const menus: Menu[] = [
     imageSrc: "/ayam-bakar.jpg",
     imageAlt: "ayam bakar",
     menuDesc:
-      "Hidangan khas Sumatera Barat yang menggugah selera. Ayam dibumbui dengan rempah-rempah khas Padang seperti kunyit, serai, dan lengkuas, lalu dipanggang hingga sempurna. Hidangan ini terkenal dengan cita rasa pedas dan gurih yang meresap hingga ke dalam daging, memberikan pengalaman kuliner yang otentik dan lezat.",
+      "Hidangan khas Sumatera Barat yang menggugah selera. Ayam dibumbui dengan rempah-rempah khas Padang seperti kunyit, serai, dan lengkuas, lalu dipanggang hingga sempurna.",
     harga: "Rp27.000",
   },
   {
@@ -154,7 +154,7 @@ const menus: Menu[] = [
     imageSrc: "/ayam-gulai.jpg",
     imageAlt: "ayam gulai",
     menuDesc:
-      "Hidangan khas Padang yang kaya akan cita rasa rempah. Potongan ayam dimasak dalam kuah santan yang gurih, berpadu dengan bumbu-bumbu tradisional seperti kunyit, lengkuas, serai, daun jeruk, dan cabai. Proses pemasakan yang lambat memastikan setiap potongan ayam meresap dengan sempurna, menciptakan tekstur yang lembut dan rasa yang mendalam.",
+      "Hidangan khas Padang yang kaya akan cita rasa rempah. Potongan ayam dimasak dalam kuah santan yang gurih, berpadu dengan bumbu-bumbu tradisional seperti kunyit, lengkuas, serai, daun jeruk, dan cabai.",
     harga: "Rp27.000",
   },
   {
@@ -348,7 +348,7 @@ const menus: Menu[] = [
   },
 ];
 
-export default function About() {
+export default function Menu() {
   const [selectedButton, setSelectedButton] = useState<string>("All");
 
   const filterMenu = (category: string) => {
@@ -357,8 +357,10 @@ export default function About() {
 
   const filteredMenu =
     selectedButton === "All"
-      ? menus
-      : menus.filter((menu) => menu.category === selectedButton);
+      ? menus.sort((a, b) => a.name.localeCompare(b.name))
+      : menus
+          .filter((menu) => menu.category === selectedButton)
+          .sort((a, b) => a.name.localeCompare(b.name));
 
   return (
     <>
