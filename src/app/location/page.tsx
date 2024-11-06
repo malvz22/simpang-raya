@@ -547,8 +547,11 @@ export default function About() {
               <div className="p-5 flex flex-col text-start gap-6 border-solid border-[1px] h-[70%]">
                 <h1 className="text-[21px]">{branch.name}</h1>
                 <div className="flex flex-col gap-4">
-                  <div className="flex flex-row">
-                    <FaLocationDot className="text-[#A22020] me-4 w-5" />
+                  <div className="flex flex-row justify-between items-start">
+                    <div className="w-[18px] h-[18px] me-3 mt-1">
+                      <FaLocationDot className="text-[#A22020]" size={18} />
+                    </div>
+
                     <Link
                       target="_blank"
                       className="hover:text-[#A22020] transition-all duration-900"
@@ -559,10 +562,10 @@ export default function About() {
                       </p>
                     </Link>
                   </div>
-                  <div className="flex flex-row justify-start items-start">
+                  <div className="flex flex-row items-center">
                     <BsFillTelephoneFill
                       size={18}
-                      className="text-[#A22020] me-4"
+                      className="text-[#A22020] me-3"
                     />
                     <p className="text-[16px] leading-normal hover:text-[#A22020] transition-all duration-900">
                       {branch.telephone}
