@@ -4,6 +4,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Hero() {
   const settings = {
@@ -11,6 +12,7 @@ export default function Hero() {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
+    infinite: true,
     appendDots: (dots: number) => (
       <div
         style={{
@@ -35,9 +37,11 @@ export default function Hero() {
     <>
       <div>
         <Slider {...settings}>
-          <div className="w-full max-w-full h-[700px] mx-auto relative">
-            <Image src={"/hero1.png"} fill alt="hero1" objectFit="cover" />
-            <div className="absolute flex flex-col translate-x-[-50%] translate-y-[-50%] left-[50%] top-[50%] text-center gap-5 break-words text-balance w-full max-w-[1024px] p-12">
+          <div className="w-full max-w-full h-[700px] mx-auto relative bg-gradient-to-b from-black/50 from-40% to-red-500/60">
+            <div className="mix-blend-overlay">
+              <Image src={"/hero1.png"} fill alt="hero1" objectFit="cover" />
+            </div>
+            <div className="absolute z-20 flex flex-col translate-x-[-50%] translate-y-[-50%] left-[50%] top-[50%] text-center gap-5 break-words text-balance w-full max-w-[1024px] p-12">
               <h1 className="text-white text-[50px] font-normal text-center">
                 SIMPANG RAYA
               </h1>
@@ -50,14 +54,17 @@ export default function Hero() {
                 pengalaman kuliner yang kaya akan budaya dan tradisi di setiap
                 sajian kami.
               </p>
-
-              <p className="text-white mx-auto text-[15px] px-4 py-3 bg-[#A22020] inline-block font-semibold">
-                SELENGKAPNYA
-              </p>
+              <Link href={"/about"} target="_blank">
+                <p className="text-white mx-auto text-[15px] px-4 py-3 bg-[#A22020] inline-block font-semibold">
+                  SELENGKAPNYA
+                </p>
+              </Link>
             </div>
           </div>
-          <div className="w-full max-w-full h-[700px] mx-auto relative">
-            <Image src={"/hero2.jpg"} fill alt="hero1" objectFit="cover" />
+          <div className="w-full max-w-full h-[700px] mx-auto relative bg-gradient-to-b from-black/50 from-40% to-red-500/60">
+            <div className="mix-blend-overlay">
+              <Image src={"/hero2.jpg"} fill alt="hero1" objectFit="cover" />
+            </div>
             <div className="absolute flex flex-col translate-x-[-50%] translate-y-[-50%] left-[50%] top-[50%] text-center gap-5 break-words text-balance w-full max-w-[1024px] p-12">
               <h1 className="text-white text-[50px] font-normal text-center">
                 MASAKAN KHAS MINANG
@@ -76,8 +83,11 @@ export default function Hero() {
               </p>
             </div>
           </div>
-          <div className="w-full max-w-full h-[700px] mx-auto relative">
-            <Image src={"/hero3.jpg"} fill alt="hero1" objectFit="cover" />
+          <div className="w-full max-w-full h-[700px] mx-auto relative bg-gradient-to-b from-black/50 from-40% to-red-500/60">
+            <div className="mix-blend-overlay">
+              <Image src={"/hero3.jpg"} fill alt="hero1" objectFit="cover" />
+            </div>
+
             <div className="absolute flex flex-col translate-x-[-50%] translate-y-[-50%] left-[50%] top-[50%] text-center gap-5 break-words text-balance w-full max-w-[1024px] p-12">
               <h1 className="text-white text-[50px] font-normal text-center">
                 AKSES YANG DEKAT
@@ -91,10 +101,11 @@ export default function Hero() {
                 yang sama, menghadirkan pengalaman kuliner Minang yang otentik
                 di dekat Anda.
               </p>
-
-              <p className="text-white mx-auto text-[15px] px-4 py-3 bg-[#A22020] inline-block font-semibold">
-                SELENGKAPNYA
-              </p>
+              <Link href={"/location"} target="_blank">
+                <p className="text-white mx-auto text-[15px] px-4 py-3 bg-[#A22020] inline-block font-semibold">
+                  SELENGKAPNYA
+                </p>
+              </Link>
             </div>
           </div>
         </Slider>

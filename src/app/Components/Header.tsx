@@ -21,44 +21,58 @@ export default function Header() {
 
         <div className="hidden md:flex flex-row gap-5 font-[700] text-[12px] text-[#070707] tracking-[3.4px]">
           <Link href={"/"}>
-            <p>HOME</p>
+            <p className="hover:text-[#A22020] transition-all duration-900 px-3">
+              HOME
+            </p>
           </Link>
           <Link href={"/about"}>
-            <p>ABOUT US</p>
+            <p className="hover:text-[#A22020] transition-all duration-900 px-3">
+              ABOUT US
+            </p>
           </Link>
           <Link href={"/menu"}>
-            <p>MENU</p>
+            <p className="hover:text-[#A22020] transition-all duration-900 px-3">
+              MENU
+            </p>
           </Link>
           <Link href={"/location"}>
-            <p>LOCATION</p>
+            <p className="hover:text-[#A22020] transition-all duration-900 px-3">
+              LOCATION
+            </p>
           </Link>
           <Link href={"/contact"}>
-            <p>CONTACT</p>
+            <p className="hover:text-[#A22020] transition-all duration-900 px-3">
+              CONTACT
+            </p>
           </Link>
         </div>
-        <RxHamburgerMenu className="md:hidden" size={20} onClick={handleMenu} />
+        <RxHamburgerMenu
+          className="md:hidden cursor-pointer"
+          size={20}
+          onClick={handleMenu}
+        />
       </div>
       <div
         className={
           menu
-            ? "flex flex-col bg-white max-w-full text-center gap-4 md:hidden"
+            ? "flex flex-col bg-white max-w-full text-center md:hidden"
             : "hidden"
         }
       >
         <Link href={"/"}>
-          <p>HOME</p>
+          <p className="p-4">HOME</p>
         </Link>
         <Link href={"/about"}>
-          <p>ABOUT US</p>
+          <p className="p-4">ABOUT US</p>
         </Link>
         <Link href={"/menu"}>
-          <p>MENU</p>
+          <p className="p-4">MENU</p>
         </Link>
         <Link href={"/location"}>
-          <p>LOCATION</p>
+          <p className="p-4">LOCATION</p>
         </Link>
         <Link href={"/contact"}>
-          <p>CONTACT</p>
+          <p className="p-4">CONTACT</p>
         </Link>
       </div>
     </div>
