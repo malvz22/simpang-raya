@@ -254,12 +254,12 @@ export default function Home() {
           <SliderDessert />
         </div>
       </div>
-      <div className="max-w-[1170px] mx-auto flex flex-col py-20">
+      {/* <div className="max-w-[1170px] mx-auto flex flex-col py-20">
         <h1 className="text-center text-[60px] text-[#A22020]">
           CABANG SIMPANG RAYA
         </h1>
         <p className="text-center">(Work in Progress :))</p>
-      </div>
+      </div> */}
       <div className="max-w-[1170px] mx-auto flex flex-col md:flex-row py-20 px-5 justify-between gap-4">
         <div className="flex flex-col max-w-full md:max-w-[512px] p-3 gap-6">
           <h1 className="text-[60px] text-black">Kirim Kami Pesan!</h1>
@@ -302,8 +302,8 @@ export default function Home() {
           </div>
         </div>
         <div className="w-full max-w-full">
-          <div className="bg-[#747474] flex justify-center items-center h-[700px]">
-            <form className="flex flex-col justify-center items-center gap-3 w-full max-w-[100%]">
+          <div className="bg-[#747474] flex justify-center items-center">
+            <form className="flex flex-col justify-center items-center gap-3 w-full max-w-[100%] py-20">
               <input
                 type="text"
                 id="name"
@@ -332,13 +332,14 @@ export default function Home() {
                 placeholder="Your Message Subject"
                 className="border-[#A22020] border-solid border-[1px] rounded-sm px-2 h-[42px] w-full max-w-[90%]"
               ></input>
-              <input
-                type="textarea"
+              <textarea
                 id="message"
                 name="message"
                 placeholder="Your Message Here"
                 className="border-[#A22020] border-solid border-[1px] rounded-sm px-2 h-[160px] w-full max-w-[90%]"
-              ></input>
+                cols={50}
+                rows={4}
+              ></textarea>
               <button
                 type="submit"
                 className="bg-[#A22020] text-white px-10 py-5 font-bold "

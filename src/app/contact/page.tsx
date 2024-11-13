@@ -47,8 +47,8 @@ export default function About() {
           </div>
         </div>
         <div className="w-full max-w-full">
-          <div className="bg-[#747474] flex justify-center items-center h-[700px]">
-            <form className="flex flex-col justify-center items-center gap-3 w-full max-w-[100%]">
+          <div className="bg-[#747474] flex justify-center items-center">
+            <form className="flex flex-col justify-center items-center gap-3 w-full max-w-[100%] py-20">
               <input
                 type="text"
                 id="name"
@@ -77,13 +77,14 @@ export default function About() {
                 placeholder="Your Message Subject"
                 className="border-[#A22020] border-solid border-[1px] rounded-sm px-2 h-[42px] w-full max-w-[90%]"
               ></input>
-              <input
-                type="textarea"
+              <textarea
                 id="message"
                 name="message"
                 placeholder="Your Message Here"
                 className="border-[#A22020] border-solid border-[1px] rounded-sm px-2 h-[160px] w-full max-w-[90%]"
-              ></input>
+                cols={50}
+                rows={4}
+              ></textarea>
               <button
                 type="submit"
                 className="bg-[#A22020] text-white px-10 py-5 font-bold "
