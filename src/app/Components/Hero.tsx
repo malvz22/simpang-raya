@@ -55,7 +55,7 @@ export default function Hero() {
                 sajian kami.
               </p>
               <Link href={"/about"} target="_blank">
-                <p className="text-white mx-auto text-[15px] px-4 py-3 bg-[#A22020] inline-block font-semibold">
+                <p className="text-white mx-auto text-[15px] px-4 py-3 bg-[#A22020] hover:bg-white transition-all duration-900 hover:text-[#A22020] inline-block font-semibold">
                   SELENGKAPNYA
                 </p>
               </Link>
@@ -78,7 +78,7 @@ export default function Hero() {
                 sajian kami.
               </p>
 
-              <p className="text-white mx-auto text-[15px] px-4 py-3 bg-[#A22020] inline-block font-semibold">
+              <p className="text-white mx-auto text-[15px] px-4 py-3 bg-[#A22020] hover:bg-white transition-all duration-900 hover:text-[#A22020] inline-block font-semibold">
                 SELENGKAPNYA
               </p>
             </div>
@@ -102,7 +102,7 @@ export default function Hero() {
                 di dekat Anda.
               </p>
               <Link href={"/location"} target="_blank">
-                <p className="text-white mx-auto text-[15px] px-4 py-3 bg-[#A22020] inline-block font-semibold">
+                <p className="text-white mx-auto text-[15px] px-4 py-3 bg-[#A22020] hover:bg-white transition-all duration-900 hover:text-[#A22020] inline-block font-semibold">
                   SELENGKAPNYA
                 </p>
               </Link>

@@ -7,6 +7,7 @@ import SliderMakanan from "./Components/SliderMakanan";
 import SliderMinuman from "./Components/SliderMinuman";
 import SliderDessert from "./Components/SliderDessert";
 import ContactForm from "./Components/ContactForm";
+import Link from "next/link";
 
 export default function Home() {
   const settings = {
@@ -233,9 +234,11 @@ export default function Home() {
               yakni H.Noersal Zainuddin mengembangkan usaha ini di Pulau Jawa
               dan sekitarnya dengan niat untuk melakukan suatu hijrah
             </p>
-            <p className="bg-[#A22020] px-10 py-5 text-[12px] text-[#f9f9f9] md:me-auto justify-start">
-              BACA TENTANG KAMI
-            </p>
+            <Link href={"/about"}>
+              <div className="bg-[#A22020] text-[#f9f9f9] md:me-auto justify-center items-center hover:bg-white hover:text-[#A22020] transition-all duration-900 px-10 py-5 tracking-[.3em] text-[12px] font-bold inline-block">
+                <p>BACA TENTANG KAMI</p>
+              </div>
+            </Link>
           </div>
         </div>
       </div>

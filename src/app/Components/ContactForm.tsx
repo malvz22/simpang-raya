@@ -5,6 +5,7 @@ import { FaInstagram } from "react-icons/fa";
 import { MdOutlineEmail } from "react-icons/md";
 import emailjs from "emailjs-com";
 import { ChangeEvent, FormEvent, useState } from "react";
+import Link from "next/link";
 
 type FormData = {
   name: string;
@@ -78,29 +79,47 @@ const ContactForm: React.FC = () => {
             </p>
           </div>
           <div className="flex flex-row gap-6">
-            <div className="rounded-full w-[70px] h-[70px] flex justify-center items-center bg-[#A22020]">
-              <BsFillTelephoneFill size={35} className="text-white" />
-            </div>
+            <Link href={"tel:6285282419922"} target="_blank">
+              <div className="rounded-full w-[70px] h-[70px] flex justify-center items-center bg-[#A22020]">
+                <BsFillTelephoneFill size={35} className="text-white" />
+              </div>
+            </Link>
             <div className="flex flex-col justify-center">
-              <h1 className="text-[25px]">Telepon</h1>
+              <Link href={"tel:tel:6285282419922"} target="_blank">
+                <h1 className="text-[25px]">Telepon</h1>
+              </Link>
               <p>0852 8241 9922</p>
             </div>
           </div>
           <div className="flex flex-row gap-6">
-            <div className="rounded-full w-[70px] h-[70px] flex justify-center items-center bg-[#A22020]">
-              <MdOutlineEmail size={35} className="text-white" />
-            </div>
+            <Link href={"mailto:official@simpangraya.com"} target="_blank">
+              <div className="rounded-full w-[70px] h-[70px] flex justify-center items-center bg-[#A22020]">
+                <MdOutlineEmail size={35} className="text-white" />
+              </div>
+            </Link>
             <div className="flex flex-col justify-center">
-              <h1 className="text-[25px]">Email</h1>
+              <Link href={"mailto:official@simpangraya.com"} target="_blank">
+                <h1 className="text-[25px]">Email</h1>
+              </Link>
               <p>official@simpangraya.com</p>
             </div>
           </div>
           <div className="flex flex-row gap-6">
-            <div className="rounded-full w-[70px] h-[70px] flex justify-center items-center bg-[#A22020]">
-              <FaInstagram size={35} className="text-white" />
-            </div>
+            <Link
+              href={"https://www.instagram.com/simpangraya/"}
+              target="_blank"
+            >
+              <div className="rounded-full w-[70px] h-[70px] flex justify-center items-center bg-[#A22020]">
+                <FaInstagram size={35} className="text-white" />
+              </div>
+            </Link>
             <div className="flex flex-col justify-center">
-              <h1 className="text-[25px]">Instagram</h1>
+              <Link
+                href={"https://www.instagram.com/simpangraya/"}
+                target="_blank"
+              >
+                <h1 className="text-[25px]">Instagram</h1>
+              </Link>
               <p>@simpang_raya</p>
             </div>
           </div>
@@ -159,7 +178,7 @@ const ContactForm: React.FC = () => {
               ></textarea>
               <button
                 type="submit"
-                className="bg-[#A22020] text-white px-10 py-5 font-bold "
+                className="bg-[#A22020] text-white px-10 py-5 font-bold hover:bg-white hover:text-[#A22020] transition-all duration-900 tracking-[.3em] text-[12px]"
               >
                 KIRIM PESAN
               </button>
