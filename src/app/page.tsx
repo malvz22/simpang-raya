@@ -242,7 +242,26 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="max-w-full bg-[#A22020]">
+      <div className="max-w-full bg-[#A22020] relative overflow-hidden">
+        <div className="w-[35px] h-[3000px] max-h-full absolute top-0 bg-repeat-y">
+          <Image
+            src={"/bordersr.png"}
+            fill
+            alt="border"
+            objectFit="cover"
+            className="bg-repeat-y"
+          />
+        </div>
+        <div className="w-[30px] h-[3000px] absolute right-0 bg-repeat-y">
+          <Image
+            src={"/bordersr.png"}
+            fill
+            alt="border"
+            objectFit="cover"
+            className="bg-repeat-y"
+          />
+        </div>
+
         <div className="max-w-[1170px] mx-auto flex flex-col py-20 px-7">
           <p className="text-white text-center text-[16px]">
             Menu - Simpang Raya

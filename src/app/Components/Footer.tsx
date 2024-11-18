@@ -8,7 +8,7 @@ export default function Footer() {
   return (
     <>
       <div className="bg-[#A22020] max-w-full text-white flex flex-col md:flex-row">
-        <div className="bg-[#171717] w-full max-w-full md:max-w-[30%] flex flex-col justify-center items-center gap-8 py-10">
+        <div className="bg-[#171717] w-full max-w-full md:max-w-[30%] flex flex-col justify-center items-center gap-8 py-20">
           <Image
             src={"/sr-logo-white.png"}
             width={120}
@@ -30,10 +30,11 @@ export default function Footer() {
                 <BsFillTelephoneFill size={20} className="text-[#A22020]" />
               </div>
             </Link>
-            <Link href={"https://www.instagram.com/simpangraya/"}></Link>
-            <div className="rounded-full w-[40px] h-[40px] flex justify-center items-center bg-white">
-              <FaInstagram size={20} className="text-[#A22020]" />
-            </div>
+            <Link href={"https://www.instagram.com/simpangraya/"}>
+              <div className="rounded-full w-[40px] h-[40px] flex justify-center items-center bg-white">
+                <FaInstagram size={20} className="text-[#A22020]" />
+              </div>
+            </Link>
           </div>
         </div>
         <div className="flex flex-col w-full max-w-full p-7">
