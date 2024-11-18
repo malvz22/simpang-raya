@@ -8,14 +8,32 @@ export default function Footer() {
   return (
     <>
       <div className="bg-[#A22020] max-w-full text-white flex flex-col md:flex-row">
-        <div className="bg-[#171717] w-full max-w-full md:max-w-[30%] flex flex-col justify-center items-center gap-8 py-20">
+        <div className="bg-[#171717] relative w-full max-w-full md:max-w-[30%] flex flex-col justify-center items-center gap-8 py-20">
+          <div className="w-[25px] h-[3000px] max-h-full absolute left-0 bg-repeat-y">
+            <Image
+              src={"/bordersr.png"}
+              fill
+              alt="border"
+              objectFit="cover"
+              className="bg-repeat-y"
+            />
+          </div>
+          <div className="w-[25px] h-[3000px] max-h-full absolute right-0 bg-repeat-y">
+            <Image
+              src={"/bordersr.png"}
+              fill
+              alt="border"
+              objectFit="cover"
+              className="bg-repeat-y"
+            />
+          </div>
           <Image
             src={"/sr-logo-white.png"}
             width={120}
             height={0}
             alt="logosrwhite"
           />
-          <p className="text-[16px] text-center px-5">
+          <p className="text-[16px] text-center px-14">
             Restoran Simpang Raya pertama kali di dirikan pada tanggal 5 juli
             1969 di kota Bukittinggi, Provinsi Sumatera Barat.
           </p>
